@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  z-index: auto;
+
+}
+body:after {
+  content: "";
+  background-image: url("watermark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 72%;
+  opacity: 0.4;
+  top: 50;
+  left: 200;
+  bottom: 0;
+  right: 0;
+  position:absolute;
+  z-index: -1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#header{
+  background-color: rgb(173, 185, 202);
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 30px;
+  text-shadow: 2px 2px 2px rgb(132, 151, 176);
+
+}
+
+.unselected:hover{
+  background-color: rgb(132, 151, 176)
+}
+
+#createspace{
+  padding-top: 400px;
+  text-align: left;
+}
+
+#nav {
+  width: 270px;
+  margin: 0;
+  padding:0;
+  position: fixed;
+  background-color: rgb(173, 185, 202);
+  font-size: 24px;
+  font-family: Arial;
+  padding-top: 0px;
+  text-align: center;
+  list-style-type: none;
+  height: 100%
+}
+#nav ul {
+  list-style-type: none;
+
+}
+#nav li a{
+  display: block;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+li:last-child {
+ margin-bottom: 0px;
+ margin-top: 205px;
+}
+
+.selected{
+  background-color: rgb(132, 151, 176)
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+.right-side {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 180px;
+
+}
+.statusp{
+  text-align: left;
+  position: fixed;
+  left: 410px;
+  top: 230px;
+}
+hr{
+  background-color: black;
+  height: 5px;
+  border: none;
+  width: 78%;
+  margin-left: 210px;
+}
+.map{
+
+  position: absolute;
+  bottom: 40px;
+  left: 700px;
+}
+#myTable{
+  position: absolute;
+  left:370px;
+  text-align: center;
+}
+th {
+  text-align: center;
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+td {
+  font-family: "Times New Roman";
+  font-size: 20px;
+  padding: 30px;
+}
+tr {
+  padding-bottom: 10px;
+}
+th.largegap{
+  padding: 80px;
+}
+th.smallgap{
+  padding: 50px;
+}
+
+#visit-form{
+    text-align: left;
+    position: fixed;
+    top: 220px;
+    left: 400px;
+  }
+
+.form-control
+{
+  text-align: center;
+  background: transparent;
+}
+::placeholder{
+  color: black;
+}
+input[type=text] {
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+}
+.report.input[type=text] {
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  width: 520px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+}
+.Submit{
+  font-size: 20px;
+  margin-top: 10px;
+  width: 220px;
+  border-color: black;
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: "Times New Roman";
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.somespace{
+  margin-top: 260px;
+}
+ button:hover,.Submit:hover, #cancelbtn:hover {
+  background-color: rgb(132, 151, 176)
+}
+

@@ -1,0 +1,50 @@
+<head>
+  <title> COVID-CT: Registration </title>
+  <link rel="stylesheet" type="text/css" href="report.css"/>
+</head>
+<body>
+    <div id="header">
+    COVID - 19 Contact Tracing
+    </div>
+      <div id="nav">
+      <ul>
+        <li> <a class="unselected" href="homepage.php"> Home</a></li>
+        <li> <a class="unselected" href= "visits_overview.php ">Overview</a></li>
+        <li><a class="unselected" href= "visits_overview2.php ">Add Visit</a></li>
+        <li><a class="unselected" href= "visits_overview3.php ">Report</a></li>
+        <li><a class="selected" href= "settings.HTML ">Settings</a></li>
+        <li><a class="unselected" href= "index.php">Logout</a></li>
+    </div>
+    <div class= "right-side">
+        <h2> Alert Settings </h2>
+        <br>
+        <hr class="line">
+        <br>
+        Here you may change the alert distance and the time span for which  <br> the contact tracing will be perfomed.
+        <br>
+    </div>
+    <div>
+            <form id="settings" method="post" action="">
+                <label> window </label>
+                <select class="classic">
+                    <option>one week</option>
+                    <option>two weeks</option>
+                    <option>three weeks</option>
+                    <option>four weeks</option>
+                </select>
+                <br>
+                <label> distance </label>
+                <input type="text" class="report"  required>
+                <br>
+                <div class="btn">
+                    <button type="submit" id="reportbtn"> Report </button>
+                    <button type="reset" id="cancelbtn"> Cancel </button>
+                </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+</html>

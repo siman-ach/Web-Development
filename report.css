@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 20px;
+
+}
+body::after {
+    content: "";
+    background-image: url("watermark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 72%;
+    opacity: 0.4;
+    top: 50;
+    left: 200;
+    bottom: 0;
+    right: 0;
+    position:absolute;
+    z-index: -1;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#header{
+    background-color: rgb(173, 185, 202);
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 30px;
+    text-shadow: 2px 2px 2px rgb(132, 151, 176);
+
+}
+
+.unselected:hover{
+    background-color: rgb(132, 151, 176)
+}
+#nav {
+    width: 270px;
+    margin: 0;
+    padding:0;
+    position: fixed;
+    background-color: rgb(173, 185, 202);
+    font-size: 24px;
+    font-family: Arial;
+    padding-top: 0px;
+    text-align: center;
+    list-style-type: none;
+    height: 100%
+}
+#nav ul {
+    list-style-type: none;
+
+}
+#nav li a{
+    display: block;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+li:last-child {
+    margin-bottom: 0px;
+    margin-top: 205px;
+}
+
+.selected{
+    background-color: rgb(132, 151, 176)
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.right-side {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 180px;
+
+}
+
+hr{
+    background-color: black;
+    height: 5px;
+    border: none;
+    width: 78%;
+    margin-left: 210px;
+}
+
+th {
+    text-align: center;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+}
+td {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    padding: 20px;
+}
+tr {
+    padding-bottom: 10px;
+}
+
+.form-control
+{
+    text-align: center;
+    background: transparent;
+}
+::placeholder{
+    color: black;
+}
+input[type=text] {
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Times New Roman";
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+
+.Submit{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 220px;
+    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: "Times New Roman";
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.somespace{
+    margin-top: 260px;
+}
+#cancelbtn:hover, #reportbtn:hover {
+    background-color: rgb(132, 151, 176)
+}
+.report {
+    text-align: center;
+    background: transparent;
+}
+#cancelbtn{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 180px;
+    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+#reportbtn {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 180px;
+    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -175px;
+    margin-right: 200px;
+
+}
+
+#report-form{
+    text-align: left;
+    position: fixed;
+    top: 400px;
+    left: 570px;
+}
+
+#settings{
+    text-align: left;
+    position: fixed;
+    top: 400px;
+    left: 520px;
+}
+button[name="reportbtn"]{
+    font-size: 20px;
+    font-family: "Times New Roman";
+
+    width: 190px;
+    margin-right: 0px;
+    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button[id="cancelbtn"]{
+    font-size: 20px;
+    font-family: "Times New Roman";
+
+    width: 190px;
+    margin-left: 300px;
+    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+select {
+    background: transparent;
+    width: 500px;
+
+    /* styling */
+    border: thin solid black;
+    border-radius: 0px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 2.5em 0.5em 1em;
+
+    /* reset */
+
+    margin-bottom: 10;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+
+/* arrows */
+
+select.classic {
+    background-image:
+            linear-gradient(45deg, transparent 50%, white 50%),
+            linear-gradient(135deg, white 50%, transparent 50%),
+            linear-gradient(to right, black, black);
+    background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            100% 0;
+    background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+

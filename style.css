@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 20px;
+
+}
+body::after {
+  content: "";
+  background-image: url("watermark.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 50%;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#header{
+  background-color: rgb(173, 185, 202);
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 30px;
+  text-shadow:  2px 2px 2px rgb(132, 151, 176);
+}
+form {
+  text-align: center;
+  position: relative;
+  top: 170px;
+}
+
+.form-control
+{
+  text-align: center;
+  background: transparent;
+}
+input[type=text], input[type=password] {
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+
+}
+::placeholder{
+  color: black;
+}
+button[type=submit], button[type=reset] {
+  font-size: 20px;
+  font-family: "Times New Roman";
+  margin-top: 60px;
+  width: 190px;
+  margin-left: 9px;
+  border-color: black;
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+#SubmitForm{
+  font-size: 20px;
+  margin-top: 20px;
+  width: 395px;
+  border-color: black;
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: "Times New Roman";
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+button:hover, #SubmitForm:hover,#SubmitReg:hover {
+  background-color: rgb(132, 151, 176)
+}
+
+#SubmitReg{
+  font-size: 20px;
+  margin-top: 20px;
+  width: 400px;
+  border-color: black;
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: "Times New Roman";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  position: absolute;
+  left: 507px;
+  }
+
+p.error {
+  position: absolute;
+  top: 100px;
+  color: #de1111;
+  text-align: center;
+
+}
